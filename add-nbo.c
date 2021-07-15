@@ -7,7 +7,6 @@ uint32_t add(uint32_t a1, uint32_t a2) {
 }
 
 int main(int argc, char *argv[]) {
-    char ss[30];
     uint32_t a1=0, a2=0;
     FILE *f;
     f = fopen(argv[1],"rb");
