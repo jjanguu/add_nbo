@@ -13,6 +13,7 @@ int main(int argc, char *argv[]) {
     fread(&a1, sizeof(a1),1,f);
     f = fopen(argv[2],"rb"); if(!f){return 0;}
     fread(&a2, sizeof(a2),1,f);
+    fclose(f);
     a1 = ntohl(a1);
     a2 = ntohl(a2);
 
