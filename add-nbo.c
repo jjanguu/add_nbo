@@ -9,9 +9,9 @@ uint32_t add(uint32_t a1, uint32_t a2) {
 int main(int argc, char *argv[]) {
     uint32_t a1=0, a2=0;
     FILE *f;
-    f = fopen(argv[1],"rb");
+    f = fopen(argv[1],"rb"); if(!f){return 0;}
     fread(&a1, sizeof(a1),1,f);
-    f = fopen(argv[2],"rb");
+    f = fopen(argv[2],"rb"); if(!f){return 0;}
     fread(&a2, sizeof(a2),1,f);
     a1 = ntohl(a1);
     a2 = ntohl(a2);
